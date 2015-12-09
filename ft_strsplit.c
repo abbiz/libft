@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/12/09 13:11:51 by abizeau           #+#    #+#             */
+/*   Updated: 2015/12/09 13:11:52 by abizeau          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	ft_count_words(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	size_t		j;
 
 	i = 0;
 	j = 0;
@@ -19,12 +31,12 @@ static size_t	ft_count_words(char const *s, char c)
 	return (i);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
-	char	**tab;
-	size_t	i;
-	size_t	j;
-	size_t	n;
+	char		**tab;
+	size_t		i;
+	size_t		j;
+	size_t		n;
 
 	i = 0;
 	j = 0;
