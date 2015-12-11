@@ -10,15 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-#This is a typical Makefile, re-usable anytime you want to compil C project.
-#All is in quiet for now, thank to do all the completion that needed for
-# specify project
-
-#Define name of program here
+#Name of program
 NAME= libft.a
 
 #SRC BLOC
-# define all the .c file in the variable SRC NAME
+#All the .c files are in the variable SRC_NAME
 SRC_PATH= ./
 SRC_NAME=	ft_memset.c \
 			ft_bzero.c \
@@ -76,27 +72,17 @@ SRC_NAME=	ft_memset.c \
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
 #OBJ BLOC
-#Do nothing here
 OBJ_PATH= obj/
 OBJ_NAME= $(SRC_NAME:.c=.o)
 OBJ= $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
 #GCC BLOC
-#GCC flag, you don't have to modify this (but you're free to go)
 GCC= gcc -Wall -Wextra -Werror
 
 #INCLUDE BLOC
-#Don't forget to include the other librarie that yo use
-INC_LIB=
+INC_LIB= libft.h
 INC_PATH= ./
 INC= -I $(INC_LIB) -I $(INC_PATH)
-
-#Once again, don't forget to includes librairy that you use !
-LIB=
-
-#FRAMEWORK BLOC
-#Don't forget to add framework that you need !
-FRAMEWORK=
 
 all: $(NAME)
 
