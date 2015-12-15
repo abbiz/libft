@@ -44,7 +44,7 @@
 #include <unistd.h>
 #include <signal.h>
 
-#include "libft.h" /* compile with -I./ */
+#include <libft.h> /* compile with -I./ */
 
 #define D_ERROR	{ printf("Error Line %d, Funct %s ", __LINE__ - 1, __func__); return (0); }
 #define D_ADD_HCTEST(name)	uf_add_test(test, "\033[33m"#name"\033[0m", uf_test_##name);
@@ -226,7 +226,7 @@ int					main(void)
 	D_ADD_TEST(itoa);
 #define	D_STRTRIM
 	D_ADD_TEST(strtrim);
-//#define	D_LSTNEW
+#define	D_LSTNEW
 //	D_ADD_TEST(lstnew);
 //#define	D_LSTDELONE
 //	D_ADD_TEST(lstdelone);
