@@ -74,7 +74,12 @@ SRC_NAME=	ft_memset.c \
 			ft_lstdel.c \
 			ft_lstadd.c \
 			ft_lstiter.c \
-			ft_lstmap.c
+			ft_lstmap.c \
+			ft_hidenp.c \
+			ft_strcapitalize.c \
+			ft_strlowcase.c \
+			ft_strrev.c \
+			ft_swap.c
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
 #OBJ BLOC
