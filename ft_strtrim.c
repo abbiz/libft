@@ -13,7 +13,6 @@
 #include "libft.h"
 
 char	*ft_strtrim(char const *s)
-
 {
 	size_t	i;
 	size_t	j;
