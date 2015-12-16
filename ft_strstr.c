@@ -14,22 +14,26 @@
 
 char	*ft_strstr(const char *big, const char *little)
 {
-	size_t	i;
-	size_t	j;
+	size_t		i;
+	size_t		j;
+	size_t		k;
 
-	j = 0;
 	i = 0;
-	while (big[i] != '\0')
+	j = 0;
+	if (little[0] == '\0')
+		return ((char *)big);
+	while (big[i])
 	{
-		if (little[j] == '\0')
-			return ((char *)big + i - j);
-		if (little[j] == big[i])
+		j = i;
+		k = 0;
+		while (big[j] == little[k])
+		{
 			j++;
-		else
-			j = 0;
+			k++;
+			if (little[k] == '\0')
+				return ((char *)&big[i]);
+		}
 		i++;
 	}
-	if (little[j] == '\0')
-		return ((char *)big + i - j);
 	return (NULL);
 }
