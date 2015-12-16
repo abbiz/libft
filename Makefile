@@ -6,7 +6,7 @@
 #    By: abizeau <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/09 12:56:08 by abizeau           #+#    #+#              #
-#    Updated: 2015/12/09 13:36:18 by abizeau          ###   ########.fr        #
+#    Updated: 2015/12/16 17:14:18 by abizeau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -97,7 +97,7 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 clean:
 	@rm -rf $(OBJ)
 	@rm -rf $(OBJ_PATH)
-	@echo "$(NAME) objects files are deleted."
+	@echo "$(OBJ) >>> Objects files are deleted."
 
 fclean: clean
 	@rm -rf $(NAME)
