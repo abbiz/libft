@@ -6,7 +6,7 @@
 #    By: abizeau <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/09 12:56:08 by abizeau           #+#    #+#              #
-#    Updated: 2015/12/16 17:14:18 by abizeau          ###   ########.fr        #
+#    Updated: 2015/12/17 14:02:04 by abizeau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ SRC_NAME=	ft_memset.c \
 			ft_memmove.c \
 			ft_memchr.c \
 			ft_memcmp.c \
+			ft_memalloc.c \
+			ft_memdel.c \
 			ft_strlen.c \
 			ft_strdup.c \
 			ft_strcpy.c \
@@ -45,8 +47,6 @@ SRC_NAME=	ft_memset.c \
 			ft_isspace.c \
 			ft_toupper.c \
 			ft_tolower.c \
-			ft_memalloc.c \
-			ft_memdel.c \
 			ft_strnew.c \
 			ft_strdel.c \
 			ft_strclr.c \
