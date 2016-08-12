@@ -95,7 +95,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) has been created."
+	@echo "> $(NAME) has been created."
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir $(OBJ_PATH) 2> /dev/null || echo "" 2> /dev/null
@@ -104,11 +104,11 @@ $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 clean:
 	@rm -rf $(OBJ)
 	@rm -rf $(OBJ_PATH)
-	@echo "$(OBJ) >>> Objects files are deleted."
+	@echo "> Objects files are deleted."
 
 fclean: clean
 	@rm -rf $(NAME)
-	@echo "$(NAME) are deleted."
+	@echo "> $(NAME) is deleted."
 
 re: fclean all
 
