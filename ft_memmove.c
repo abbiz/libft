@@ -18,7 +18,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	i;
 
 	i = 0;
-	tmp = ft_memalloc(len);
+	if ((tmp = ft_memalloc(len)) == 0)
+		return (NULL);
 	ft_memcpy(tmp, src, len);
 	while (i < len)
 	{
