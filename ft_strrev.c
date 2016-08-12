@@ -12,20 +12,23 @@
 
 #include "libft.h"
 
-void	ft_strrev(char *str)
+char	*ft_strrev(char *str)
 {
 	size_t	i;
-	size_t	j;
-	char	*str2;
+	size_t	len;
+	char	c;
 
+	len = 0;
+	while (str[len] != '\0')
+		len++;
 	i = 0;
-	j = ft_strlen(str);
-	str2 = str;
-	while (j != 0)
+	len--;
+	while (i <= len / 2)
 	{
-		str[i] = str2[j];
+		c = str[i];
+		str[i] = str[len - i];
+		str[len - i] = c;
 		i++;
-		j--;
 	}
-	ft_putstr(str);
+	return (str);
 }

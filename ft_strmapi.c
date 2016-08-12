@@ -20,7 +20,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (s == NULL || f == NULL)
 		return (NULL);
 	i = 0;
-	map = ft_strnew(ft_strlen(s));
+	if ((map = ft_strnew(ft_strlen(s))) == 0)
+		return (NULL);
 	while (i < ft_strlen(s))
 	{
 		map[i] = (*f)(i, s[i]);

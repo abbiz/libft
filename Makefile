@@ -10,12 +10,10 @@
 #                                                                              #
 # **************************************************************************** #
 
-#Name of program
 NAME= libft.a
 
-#SRC BLOC
-#All the .c files are in the variable SRC_NAME
 SRC_PATH= ./
+
 SRC_NAME=	ft_memset.c \
 			ft_bzero.c \
 			ft_memcpy.c \
@@ -76,21 +74,19 @@ SRC_NAME=	ft_memset.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
 			ft_hidenp.c \
-			ft_strcapitalize.c \
-			ft_strlowcase.c \
 			ft_strrev.c \
-			ft_swap.c
+			ft_swap.c \
+			ft_djamal.c \
+			ft_is_prime.c
+
 SRC= $(addprefix $(SRC_PATH), $(SRC_NAME))
 
-#OBJ BLOC
 OBJ_PATH= obj/
 OBJ_NAME= $(SRC_NAME:.c=.o)
 OBJ= $(addprefix $(OBJ_PATH), $(OBJ_NAME))
 
-#GCC BLOC
 GCC= gcc -Wall -Wextra -Werror
 
-#INCLUDE BLOC
 INC_LIB= libft.h
 INC_PATH= ./
 INC= -I $(INC_LIB) -I $(INC_PATH)

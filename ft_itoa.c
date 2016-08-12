@@ -39,7 +39,8 @@ char		*ft_itoa(int n)
 	else
 		neg = 0;
 	i = len_itoa(n);
-	str = (char *)ft_memalloc(sizeof(char) * i + 1);
+	if ((str = (char *)ft_memalloc(sizeof(char) * i + 1)) == 0)
+		return (NULL);
 	while (i-- != 0)
 	{
 		if (n < 0)
