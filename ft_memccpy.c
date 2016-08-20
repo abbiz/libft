@@ -20,8 +20,8 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	while (i < n)
 	{
 		((char *)dst)[i] = ((char *)src)[i];
-		if (((char *)src)[i] == c)
-			return ((char *)dst) + i + 1;
+		if (((char *)src)[i] ==  c)
+			return ((char *)dst + i + 1);
 		i++;
 	}
 	return (NULL);
