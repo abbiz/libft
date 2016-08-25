@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hidenp.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_unicode.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/16 16:54:53 by abizeau           #+#    #+#             */
-/*   Updated: 2016/08/25 07:40:00 by abizeau          ###   ########.fr       */
+/*   Created: 2016/08/25 07:39:16 by abizeau           #+#    #+#             */
+/*   Updated: 2016/08/25 07:39:51 by abizeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_hidenp(char *str1, char *str2)
+void	ft_putchar(char c)
 {
-	size_t	a;
-	size_t	i;
-	size_t	j;
-
-	a = 0;
-	i = 0;
-	j = 0;
-	while (str2[j] != '\0')
-		if (str2[j] == str1[i])
-		{
-			a++;
-			i++;
-			j++;
-		}
-		else
-			j++;
-	if (a == ft_strlen(str1))
-		ft_putchar('1');
-	else
-		ft_putchar('0');
+		write(1, &c, 1);
 }
