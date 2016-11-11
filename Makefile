@@ -6,7 +6,7 @@
 #    By: abizeau <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/09 12:56:08 by abizeau           #+#    #+#              #
-#    Updated: 2015/12/17 14:02:04 by abizeau          ###   ########.fr        #
+#    Updated: 2016/11/11 16:29:11 by abizeau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -99,7 +99,4 @@ fclean: clean
 
 re: fclean all
 
-norme:
-	@norminette $(INC)*.[ch]
-
-.PHONY: all clean fclean re norme
+.PHONY: all clean fclean re
