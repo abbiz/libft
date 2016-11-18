@@ -6,7 +6,7 @@
 /*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/16 16:54:53 by abizeau           #+#    #+#             */
-/*   Updated: 2016/08/25 07:40:00 by abizeau          ###   ########.fr       */
+/*   Updated: 2016/11/18 16:33:16 by abizeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	ft_hidenp(char *str1, char *str2)
 	i = 0;
 	j = 0;
 	while (str2[j] != '\0')
+	{
 		if (str2[j] == str1[i])
 		{
 			a++;
@@ -30,6 +31,7 @@ void	ft_hidenp(char *str1, char *str2)
 		}
 		else
 			j++;
+	}
 	if (a == ft_strlen(str1))
 		ft_putchar('1');
 	else

@@ -6,7 +6,7 @@
 #    By: abizeau <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/09 12:56:08 by abizeau           #+#    #+#              #
-#    Updated: 2016/11/11 16:25:46 by abizeau          ###   ########.fr        #
+#    Updated: 2016/11/18 17:05:20 by abizeau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,11 +71,10 @@ SRC =	ft_memset.c \
 		ft_lstadd.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
-		ft_hidenp.c \
-		ft_strrev.c \
 		ft_swap.c \
 		ft_djamal.c \
-		ft_is_prime.c
+		ft_is_prime.c \
+		ft_hidenp.c
 
 OBJ = $(SRC:.c=.o)
 

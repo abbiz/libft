@@ -18,6 +18,6 @@ void	*ft_memalloc(size_t size)
 
 	if ((mem = (char *)malloc(sizeof(char) * size)) == 0)
 		return (NULL);
-	ft_bzero((void*)mem, size);
+	ft_bzero((void *)mem, size);
 	return ((void *)mem);
 }

@@ -6,14 +6,12 @@
 /*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/09 13:36:45 by abizeau           #+#    #+#             */
-/*   Updated: 2015/12/17 14:12:49 by abizeau          ###   ########.fr       */
+/*   Updated: 2016/11/18 17:03:15 by abizeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# define BUFF_SIZE 42
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -91,10 +89,9 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-void				ft_hidenp(char *str1, char *str2);
-char				*ft_strrev(char *str);
 void				ft_swap(int *a, int *b);
 int					ft_djamal(int i, int j, int k);
 int					ft_is_prime(int nb);
+void				ft_hidenp(char *str1, char *str2);
 
 #endif
