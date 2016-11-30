@@ -6,7 +6,7 @@
 /*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/09 13:36:45 by abizeau           #+#    #+#             */
-/*   Updated: 2016/11/18 17:03:15 by abizeau          ###   ########.fr       */
+/*   Updated: 2016/11/30 07:10:52 by abizeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,6 @@ void				ft_swap(int *a, int *b);
 int					ft_djamal(int i, int j, int k);
 int					ft_is_prime(int nb);
 void				ft_hidenp(char *str1, char *str2);
+void				ft_clear_tab(char **tab);
 
 #endif
