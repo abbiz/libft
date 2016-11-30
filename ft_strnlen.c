@@ -6,7 +6,7 @@
 /*   By: abizeau <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 07:26:57 by abizeau           #+#    #+#             */
-/*   Updated: 2016/11/30 07:28:49 by abizeau          ###   ########.fr       */
+/*   Updated: 2016/11/30 07:53:54 by abizeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ size_t		ft_strnlen(const char *s, size_t maxlen)
 	len = ft_strlen(s);
 	return (len < maxlen ? len : maxlen);
 }
-
